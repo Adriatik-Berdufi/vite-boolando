@@ -32,9 +32,11 @@ export default{
     <figure>
       <img src="../assets/logo/boolean-logo.png" alt="logo boolean">
     </figure>
-    <div>
+    <div class="icons">
       <ul>
-        <li><font-awesome-icon :icon="['far', 'user']"/></li>
+        <li><font-awesome-icon :icon="['far', 'user']" /></li>
+        <li><font-awesome-icon :icon="['far', 'heart']" /></li>
+        <li><font-awesome-icon :icon="['fas', 'bag-shopping']" /></li>
       </ul>
     </div>
   </div>
@@ -44,6 +46,7 @@ export default{
 
 <style lang="scss" scoped>
 .container{
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -51,6 +54,7 @@ export default{
       list-style: none;
       a{
         text-decoration: none;
+        color: inherit;
       }
       }
   .nav-container{
@@ -68,8 +72,12 @@ export default{
       object-fit:contain;
     }
   }
-    
-  
+  .icons{
+    ul{
+      display: flex;
+      gap: 15px;
+    }
+  }   
 }
 
 </style>
