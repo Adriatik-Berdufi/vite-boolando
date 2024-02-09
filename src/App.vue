@@ -14,10 +14,25 @@ export default{
 </script>
 
 <template>
-  <appheader/>
-  <appmain/>
-  <appfooter/>
+  
+  <header>
+    <appheader/>
+  </header>
+
+  
+  <main>
+    <appmain/>
+  </main>
+  
+  <footer>
+    <appfooter/>
+  </footer>
+  
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use './styles/general.scss';
+header{
+  background-color: red;
+}
 </style>
