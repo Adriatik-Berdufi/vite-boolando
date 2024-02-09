@@ -1,7 +1,7 @@
 <script>
-import appheader from './components/header.vue';
-import appmain from './components/main.vue';
-import appfooter from './components/footer.vue';
+import appheader from './components/Appheader.vue';
+import appmain from './components/Appmain.vue';
+import appfooter from './components/Appfooter.vue';
 
 
 export default{
@@ -33,6 +33,9 @@ export default{
 <style lang="scss" scoped>
 @use './styles/general.scss';
 header{
-  background-color: red;
+  background-color: rgb(246, 105, 5);
+  height: 70px;
+  box-shadow: 0px 3px 10px 1px rgb(173, 80, 12);
+  
 }
 </style>
