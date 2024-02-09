@@ -36,6 +36,16 @@ header{
   background-color: rgb(246, 105, 5);
   height: 70px;
   box-shadow: 0px 3px 10px 1px rgb(173, 80, 12);
+  color: white;
   
+}
+main{
+  background-color: rgb(245, 238, 228);
+  height: calc(100vh - 150px);
+}
+footer{
+  background-color:rgb(26, 26, 26);
+  height: 80px;
+  color: white;
 }
 </style>
