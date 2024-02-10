@@ -25,8 +25,8 @@ export default{
 <template>
   <div class="container ">
     <div class="nav-container">
-      <ul v-for="element in headerNavbar">
-        <li><a :href="element.url">{{element.title}}</a></li>
+      <ul>
+        <li v-for="element in headerNavbar"><a :href="element.url">{{element.title}}</a></li>
       </ul>
     </div>
     <figure>
@@ -45,7 +45,12 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+*{
+  margin: 0;
+  padding: 0;
+}
 .container{
+  height: inherit;
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -57,10 +62,14 @@ export default{
       }
       }
   .nav-container{
+    ul{
       display: flex;
       align-items: center;
-      height: 70px;
-    
+      li{
+        margin-right: 15px;
+        font-size: 20px;
+      }
+    }
     }
   figure{
     display: flex;
@@ -74,9 +83,9 @@ export default{
   .icons{
     ul{
       display: flex;
-      gap: 15px;
+      gap:0 20px;
+      font-size: 20px;
     }
   }   
 }
-
 </style>

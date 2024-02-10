@@ -41,7 +41,7 @@ header{
 }
 main{
   background-color: rgb(245, 238, 228);
-  height: calc(100vh - 150px);
+  
 }
 footer{
   background-color:rgb(26, 26, 26);
