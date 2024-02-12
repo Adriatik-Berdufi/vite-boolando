@@ -1,6 +1,20 @@
 import{ reactive } from 'vue';
 
 export const store = reactive({
-    test: 'test data globali',
+    headerNavbar :[
+        {
+        title: 'Uomo',
+        url: '#'
+        },
+        {
+        title: 'Donna',
+        url: '#'
+        },
+        {
+        title: 'Bambino',
+        url: '#'
+        },
+    ],
+    
 
 });
