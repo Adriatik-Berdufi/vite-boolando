@@ -1,4 +1,5 @@
 <script>
+import { store } from "../store/index";
 export default{
   data(){
      const headerNavbar = [
@@ -15,7 +16,7 @@ export default{
       url: '#'
       },
   ]
-    return{headerNavbar};
+    return{headerNavbar,store};
   },
 };
 
@@ -24,6 +25,7 @@ export default{
 
 <template>
   <div class="container ">
+    <h1>{{ store.test }}</h1>
     <div class="nav-container">
       <ul>
         <li v-for="element in headerNavbar"><a :href="element.url">{{element.title}}</a></li>
