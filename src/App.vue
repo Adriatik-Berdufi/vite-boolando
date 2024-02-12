@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 import appheader from './components/Appheader.vue';
 import appmain from './components/Appmain.vue';
 import appfooter from './components/Appfooter.vue';
@@ -6,9 +7,16 @@ import appfooter from './components/Appfooter.vue';
 
 export default{
   data(){
-    return{};
+    return{
+      
+    };
+    
   },
   components:{appheader,appmain,appfooter},
+  created(){
+    console.log(axios);
+  }
+
 };
 
 </script>
